@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма обратной связи</title>
+  <link rel="stylesheet" href="pages/index.css">
+</head>
+<body class="page">
+
+  <div class="page__container">
+
+    <main>
+
+
+      <form class="question-form" action="https://60376bfd5435040017722533.mockapi.io/form" method="POST">
+
+        <h1 class="question-form__title">Задать вопрос</h1>
+
+        <input class="question-form__input" name="your-name" type="text" placeholder="Фамилия Имя Отчество *" required>
+
+        <input class="question-form__input" name="phone" type="phone" placeholder="Телефон *" required>
+
+        <input class="question-form__input" name="email" type="email" placeholder="Email">
+
+        <button class="question-form__button" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
+
+      </form>
+      
+    </main>
+
+  </div>
+
+  <script src="./scripts/main.js"></script>
+
+</body>
+</html>
