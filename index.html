@@ -11,24 +11,30 @@
 
   <div class="page__container">
 
-    <main>
+    <form class="question-form" action="https://60376bfd5435040017722533.mockapi.io/form" method="post" name="form">
 
+      <h1 class="question-form__title">Задать вопрос</h1>
 
-      <form class="question-form" action="https://60376bfd5435040017722533.mockapi.io/form" method="POST">
+      <input class="question-form__input" name="name" type="text" id="name" 
+      placeholder="Фамилия Имя Отчество *" 
+      required
+      title="поле может содержать русские буквы, пробелы и тире" 
+      pattern="[А-Я,а-я, ,-]{1,}" autocomplete="no">
 
-        <h1 class="question-form__title">Задать вопрос</h1>
+      <input class="question-form__input" name="phone" type="tel" id="phone" 
+      placeholder="Телефон *" 
+      required
+      title="поле может содержать цифры, пробелы, знаки '-' и '+'"
+      pattern="(^\+)([0-9, ,-]{1,})">
 
-        <input class="question-form__input" name="your-name" type="text" placeholder="Фамилия Имя Отчество *" required>
+      <input class="question-form__input" name="email" type="email" id="email" 
+      placeholder="Email" 
+      pattern="([0-9,-,-,_,A-Z,a-z]{1,})(@)([a-z]{1,})(\.)([a-z]{2,3})">
 
-        <input class="question-form__input" name="phone" type="phone" placeholder="Телефон *" required>
+      <input class="question-form__input" type="submit" value="ОТПРАВИТЬ ЗАПРОС">
 
-        <input class="question-form__input" name="email" type="email" placeholder="Email">
-
-        <button class="question-form__button" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
-
-      </form>
       
-    </main>
+    </form>
 
   </div>
 
