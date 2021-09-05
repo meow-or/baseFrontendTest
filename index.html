@@ -24,11 +24,12 @@
       <input class="question-form__input" name="phone" type="tel" id="phone" 
       placeholder="Телефон *" 
       required
-      title="поле может содержать цифры, пробелы, знаки '-' и '+'"
+      title="заполните поле в формате +х ххх ххх-хх-хх"
       pattern="(^\+)([0-9, ,-]{1,})">
 
       <input class="question-form__input" name="email" type="email" id="email" 
-      placeholder="Email" 
+      placeholder="Email"
+      title="заполните поле в формате mail@example.com" 
       pattern="([0-9,-,-,_,A-Z,a-z]{1,})(@)([a-z]{1,})(\.)([a-z]{2,3})">
 
       <input class="question-form__input" type="submit" value="ОТПРАВИТЬ ЗАПРОС">
