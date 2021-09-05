@@ -11,35 +11,41 @@
 
   <div class="page__container">
 
-    <form class="question-form" action="https://60376bfd5435040017722533.mockapi.io/form" method="post" name="form">
+    <form class="question-form" action="https://60376bfd5435040017722533.mockapi.io/form" method="post" name="form"> 
 
       <h1 class="question-form__title">Задать вопрос</h1>
-
-      <input class="question-form__input" name="name" type="text" id="name" 
-      placeholder="Фамилия Имя Отчество *" 
-      required
-      title="поле может содержать русские буквы, пробелы и тире" 
-      pattern="[А-Я,а-я, ,-]{1,}" autocomplete="no">
-
-      <input class="question-form__input" name="phone" type="tel" id="phone" 
-      placeholder="Телефон *" 
-      required
-      title="заполните поле в формате +х ххх ххх-хх-хх"
-      pattern="(^\+)([0-9, ,-]{1,})">
-
-      <input class="question-form__input" name="email" type="email" id="email" 
-      placeholder="Email"
-      title="заполните поле в формате mail@example.com" 
-      pattern="([0-9,-,-,_,A-Z,a-z]{1,})(@)([a-z]{1,})(\.)([a-z]{2,3})">
-
-      <input class="question-form__input" type="submit" value="ОТПРАВИТЬ ЗАПРОС">
-
       
+        <input class="question-form__input validation" name="name" type="text" id="name"
+        placeholder="Фамилия Имя Отчество *" 
+        required
+        title="поле может содержать русские буквы, пробелы и тире" 
+        pattern="[А-Я,а-я, ,-]{1,}">
+      
+        <input class="question-form__input validation" name="phone" type="tel" id="phone" 
+        placeholder="Телефон *" 
+        required
+        title="заполните поле в формате +х ххх ххх-хх-хх"
+        pattern="(^\+)([0-9, ,-]{1,})">
+      
+        <input class="question-form__input validation" name="email" type="email" id="email" 
+        placeholder="Email"
+        title="заполните поле в формате mail@example.com" 
+        pattern="([0-9,-,-,_,A-Z,a-z]{1,})(@)([a-z]{1,})(\.)([a-z]{2,3})">
+
+        <input class="question-form__input" type="submit" value="ОТПРАВИТЬ ЗАПРОС">
+        
+
     </form>
 
   </div>
 
-  <script src="./scripts/main.js"></script>
+<!-- JS валидация в разработке, работает несовсем корректно.
+
+  <script src="./scripts/validation.js"></script>
+
+-->
+
+
 
 </body>
 </html>
